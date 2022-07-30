@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+</head>
+<body>
+    
+
+
+<div>
+    <h1>This is the landing page -> Branches data</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th rowspan="2">Total Seats</th>
+                <th rowspan="2">Seats Remaining</th>
+                <th>Cut-Off</th>
+            </tr>
+
+        </thead>
+    
+        <tbody>
+
+        {% for branch in branches %}
+        <div>
+            <tr>
+                <td>{{branch.name}}</td>
+                <td>{{branch.seats_total}}</td>
+                <td>{{branch.seats_remain}}</td>
+                <td>{{branch.cutoff}}</td>
+            </tr>
+        </div>
+        </tbody>
+
+    {% endfor %}
+    </table>
+</div>
+
+
+</body>
+</html>

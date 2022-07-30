@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login/Registration</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" class="mystyle.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="javascript.js"></script>
+    </head>
+    <body >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <div class="panel panel-login bg-transparent">
+                        <div class="panel-heading">
+                            <div class="row" >
+                                <div class="col-xs-6">
+                                    <a href="#" class="active" id="login-form-link">Login</a>
+                                </div>
+                                <div class="col-xs-6">
+                                    <a href="#" id="register-form-link">Register</a>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+
+
+                        <div class="panel-body bg-transparent">
+                            <div class="row">
+                                <div class="col-lg-12">
+
+
+                                    <form id="login-form" action="" method="POST" style="display: block;">
+                                        {% csrf_token %}
+                                        <div class="form-group">                                            
+                                            <input type="text" name = "username" id="E-mail" tabindex="1" class="form-control" placeholder="E-mail" >
+                                        </div> 
+                                        <div class="form-group">
+                                            <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password">
+                                        </div>
+                                        <div class="form-group text-center">
+                                            <input type="checkbox" tabindex="3" class="remember" name="remember" id="remember">
+                                            <label class="rememberme" for="remember"> Remember Me</label>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row wrap">
+                                                <input type="submit" value="Register" class="button1"/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <div class="text-center">
+                                                        <a href="" tabindex="5" class="forgot-password">Forgot Password?</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </form>
+
+
+
+                                    <!-- <form id="register-form" acrole="form" style="display: none;">
+                                        
+		
+                                        <div class="form-group">
+                                            <input type="text" action='login.html'me="E-mail/Phone number" id="E-mail/Phone number" tabindex="1" class="form-control" placeholder="E-mail/Phone Number" value="">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" name="Create Password" id="Create-password" tabindex="2" class="form-control" placeholder="Create Password">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" name="Confirm-password" id="Confirm-password" tabindex="2" class="form-control" placeholder="Confirm Password">
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                               
+                                                <div class="row wrap">
+                                                    <button class="button1">Register</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </body>
+</html>
