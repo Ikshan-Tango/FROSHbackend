@@ -53,4 +53,3 @@ def login(request):
         else:
             messages.error(request, "Error: Username or password does not exist")
     return render(request,'base/login.html')
-

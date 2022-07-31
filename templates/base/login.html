@@ -9,7 +9,7 @@
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="javascript.js"></script>
+    <script type="text/javascript" src="javascript.js" defer></script>
     </head>
     <body >
         <div class="container">
@@ -37,7 +37,7 @@
                                     <form id="login-form" action="" method="POST" style="display: block;">
                                         {% csrf_token %}
                                         <div class="form-group">                                            
-                                            <input type="text" name = "username" id="E-mail" tabindex="1" class="form-control" placeholder="E-mail" >
+                                            <input type="text" name = "username" id="E-mail" tabindex="1" class="form-control" placeholder="Application Number" >
                                         </div> 
                                         <div class="form-group">
                                             <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password">
